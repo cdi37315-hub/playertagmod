@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "playertag",
+  "version": "${version}",
+  "name": "PlayerTag",
+  "description": "Highlight friends in green and enemies in red with a convenient config menu.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.playertag.client.PlayerTagClient"]
+  },
+  "mixins": ["playertag.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4"
+  }
+}
